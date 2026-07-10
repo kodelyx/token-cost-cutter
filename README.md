@@ -54,6 +54,26 @@ All data is stored locally in SQLite. Nothing leaves your machine.
 - **Zero Loss** — Only strips structural noise. Compile errors, test failures, and stack traces stay intact.
 - **Improves AI Accuracy** — Clean data helps Claude isolate bugs faster instead of getting lost in massive logs.
 - **Fail-Safe Tee Mode** — On failure, full raw output is saved to a temp file so Claude can access it instantly.
+- **Protects AI Memory** — Saves up to 90% of tokens, allowing 3–5x longer coding sessions before context limits are reached.
+- **Filters Unactionable Noise** — Excludes unhelpful logs (like VM filesystem paths, progress bars, and permission loops) to focus the AI on actionable data.
+
+---
+
+## Integration with Other AI Agents
+
+TCC has built-in integration support for a wide range of AI coding assistants and IDE environments:
+
+* **Supported Agents (`tcc init --agent <name>`):**
+  * `claude` — Claude Code (default)
+  * `cursor` — Cursor Agent (patches global `hooks.json`)
+  * `windsurf` — Windsurf Cascade (creates `.windsurfrules`)
+  * `cline` — Cline / Roo Code (creates `.clinerules`)
+  * `antigravity` — Google Antigravity (creates `.agents/rules/`)
+  * `kilocode`, `pi`, `hermes` — Custom coding CLIs
+* **Other Platforms:**
+  * `tcc init --copilot` — GitHub Copilot integration (VS Code + CLI)
+  * `tcc init --gemini` — Gemini CLI integration
+  * `tcc init --opencode` — OpenCode editor plugin
 
 ---
 
