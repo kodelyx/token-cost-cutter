@@ -4,43 +4,61 @@
   <img src="banner.png" alt="TCC Banner" width="700">
 </p>
 
-Auto-optimize terminal outputs for Claude Code instantly. Save 60–90% tokens with zero manual setup.
+Auto-optimize terminal outputs for Claude Code. Save 60–90% tokens with zero setup.
 
-🌐 **Website**: [https://tcc.kodelyx.in](https://tcc.kodelyx.in)
+🌐 [tcc.kodelyx.in](https://tcc.kodelyx.in)
 
 ---
 
-## ⚡ Quick Start
+## Quick Start
 
-### 1. Install TCC globally
+**1. Install globally**
 ```bash
-# Using Bun
+# Via Bun
 bun install -g token-cost-cutter
 
-# Using NPM
+# Via NPM
 npm install -g token-cost-cutter
 ```
 
-### 2. Connect to Claude Code
+**2. Connect to Claude Code**
 ```bash
 tcc init -g
 ```
-*Restart Claude Code after running the hook command.*
+Restart Claude Code after running this.
 
 ---
 
-## 🛠️ How It Works
+## How It Works
 
-1. **Auto-Intercept**: Runs silently in the background when Claude runs shell commands (tests, diffs, logs, etc.).
-2. **Optimize & Summarize**: Filters out ANSI progress bars, deduplicates logs, and strips empty lines.
-3. **Save Tokens**: Delivers a highly compact, optimized summary to Claude, reducing token costs by up to 90%.
+1. **Auto-Intercept** — Runs silently when Claude executes shell commands.
+2. **Optimize** — Strips ANSI noise, deduplicates logs, removes empty lines.
+3. **Save Tokens** — Delivers compact output to Claude, reducing costs by up to 90%.
 
 ---
 
-## 🧠 Accuracy & Reliability (Does it affect Claude's behavior?)
+## Check Your Savings
 
-We understand that Claude Code users worry about losing critical details. Here is how TCC ensures **100% reliability** with zero accuracy loss:
+```bash
+tcc gain              # Total tokens and cost saved
+tcc gain --history    # Recent command breakdown
+tcc gain --graph      # 30-day ASCII savings chart
+```
 
-* **Zero Loss of Crucial Details**: TCC only strips raw structural noise (like thousands of unchanged files in `git status`, progress bars, or repetitive logs). Critical compile errors, test failures, and line numbers are always preserved intact.
-* **Actually Improves Accuracy**: LLMs can lose focus when bombarded with massive, noisy terminal logs (the "needle in a haystack" problem). By sending clean summaries, Claude pinpoints and fixes bugs faster and more accurately.
-* **Fail-Safe Tee Mode**: If a command fails, TCC automatically writes the full, unfiltered raw output to a temporary file. If Claude needs to inspect the complete trace, it can access this file directly, ensuring zero loss of troubleshooting capability.
+All data is stored locally in SQLite. Nothing leaves your machine.
+
+---
+
+## Accuracy & Reliability
+
+- **Zero Loss** — Only strips structural noise. Compile errors, test failures, and stack traces stay intact.
+- **Improves AI Accuracy** — Clean data helps Claude isolate bugs faster instead of getting lost in massive logs.
+- **Fail-Safe Tee Mode** — On failure, full raw output is saved to a temp file so Claude can access it instantly.
+
+---
+
+## Links
+
+- 🌐 Website: [tcc.kodelyx.in](https://tcc.kodelyx.in)
+- 📦 NPM: [token-cost-cutter](https://www.npmjs.com/package/token-cost-cutter)
+- 🐙 GitHub: [kodelyx/token-cost-cutter](https://github.com/kodelyx/token-cost-cutter)
