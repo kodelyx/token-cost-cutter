@@ -32,7 +32,7 @@ tcc init -g
 ## 🛠️ How It Works
 
 1. **Auto-Intercept**: Runs silently in the background when Claude runs shell commands (tests, diffs, logs, etc.).
-2. **Snip & Summarize**: Filters out ANSI progress bars, deduplicates logs, and strips empty lines.
+2. **Optimize & Summarize**: Filters out ANSI progress bars, deduplicates logs, and strips empty lines.
 3. **Save Tokens**: Delivers a highly compact, optimized summary to Claude, reducing token costs by up to 90%.
 
 ---
