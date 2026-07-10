@@ -1,5 +1,9 @@
 # Token Cost Cutter (TCC)
 
+<p align="center">
+  <img src="banner.png" alt="TCC Banner" width="700">
+</p>
+
 Auto-optimize terminal outputs for Claude Code instantly. Save 60–90% tokens with zero manual setup.
 
 🌐 **Website**: [https://tcc.kodelyx.in](https://tcc.kodelyx.in)
