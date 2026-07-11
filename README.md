@@ -1,10 +1,14 @@
-# Token Cost Cutter (TCC)
+# Token Cost Cutter (TCC) — The AI Agent & Claude Toolkit
 
 <p align="center">
   <img src="banner.png" alt="TCC Banner" width="700">
 </p>
 
-Auto-optimize terminal outputs for Claude Code. Save 60–90% tokens with zero setup.
+### 🛠️ The Essential AI Developer Toolkit for Token Optimization & Cost Reduction
+
+**Token Cost Cutter (TCC)** is an open-source **AI Developer Toolkit** designed to dramatically reduce LLM token usage and prevent context-window bloat when using terminal-based AI agents like **Claude Code**, **Cursor**, **Windsurf**, **Cline**, and other coding assistants.
+
+Auto-optimize terminal outputs. Save 60–90% tokens with zero setup.
 
 🌐 [tcc.kodelyx.in](https://tcc.kodelyx.in)
 
