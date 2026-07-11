@@ -45,6 +45,10 @@ tcc gain --history    # Recent command breakdown
 tcc gain --graph      # 30-day ASCII savings chart
 ```
 
+<p align="center">
+  <img src="gain.png" alt="TCC Gain Dashboard" width="700">
+</p>
+
 All data is stored locally in SQLite. Nothing leaves your machine.
 
 ---
